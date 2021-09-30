@@ -2,6 +2,7 @@ import Layer from "../layer/Layer";
 import "./Dialog.scss"
 
 interface DialogProps {
+  isActive: boolean,
   title: string, 
   content: React.ReactNode, 
   onHandleCancelClick: () => void, 
@@ -12,7 +13,7 @@ interface DialogProps {
 
 function Dialog(props: DialogProps) {
   return (
-    <Layer>
+    <Layer isActive={props.isActive}>
       <div className="dialog">
         <h2 className="title">{props.title}</h2>
           <div className="content">{props.content}</div>

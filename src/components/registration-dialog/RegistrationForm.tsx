@@ -1,6 +1,6 @@
 function RegistrationForm() {
   return(
-    <div className="registration-form">
+    <div className="registration_form">
       <h1>Start your free trial</h1>
       <label>Company name</label>
       <input type="text"></input>
