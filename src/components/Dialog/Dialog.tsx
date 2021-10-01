@@ -1,5 +1,5 @@
-import Layer from "../layer/Layer";
-import Button from "../button/Button"
+import Layer from "../Layer/Layer";
+import Button from "../Button/Button"
 import "./Dialog.scss"
 
 interface DialogProps {

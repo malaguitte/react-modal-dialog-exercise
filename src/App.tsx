@@ -1,7 +1,7 @@
 import "./App.scss";
 import { useState } from "react";
 import RegistrationDialog from "./components/RegistrationDialog/RegistrationDialog";
-import { dragElement } from "./utils/Drag";
+import { makeDraggable } from "./utils/DragElement";
 import Button from "./components/Button/Button";
 
 const SHOW_DIALOG_BUTTON_LABEL = "Show Dialog";
@@ -14,7 +14,7 @@ function App() {
   // This makes the layer element draggable.
   const layerElement = document.getElementById("layer_content");
   if (layerElement) {
-    dragElement(layerElement);
+    makeDraggable(layerElement);
   }
 
   return (
