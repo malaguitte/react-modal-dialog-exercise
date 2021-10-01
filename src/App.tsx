@@ -1,9 +1,10 @@
-import './App.scss'
-import { useState } from 'react';
-import RegistrationDialog from './components/registration-dialog/RegistrationDialog';
+import "./App.scss";
+import { useState } from "react";
+import RegistrationDialog from "./components/registration-dialog/RegistrationDialog";
 import { dragElement } from "./utils/Drag";
+import Button from "./components/button/Button";
 
-const TEST_BUTTON_LABEL = "Show/Hide Dialog";
+const SHOW_DIALOG_BUTTON_LABEL = "Show Dialog";
 const onCancelClick = () => console.log("Clicked Cancel");
 const onOkClick = () => console.log("Clicked OK");
 
@@ -18,11 +19,14 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={() => setActive(!isActive)}>{TEST_BUTTON_LABEL}</button>
+      <div className="show_dialog_button">
+        <Button theme="primary" onClickHandler={() => setActive(true)}>{SHOW_DIALOG_BUTTON_LABEL}</Button>
+      </div>
       <RegistrationDialog
         isActive={isActive}
         onHandleCancelClick={onCancelClick}
         onHandleOkClick={onOkClick}
+        onHandleCloseClick={() => setActive(false)}
       />
     </div>
   )

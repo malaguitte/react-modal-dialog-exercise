@@ -1,0 +1,27 @@
+.button {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #000E40;
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  min-width: 120px;
+  transition: filter 200ms ease-out;
+  cursor: pointer;
+  
+  &:hover {
+    filter: opacity(0.5);
+    transition: filter 200ms ease-in;
+  }
+
+  &.secondary {
+    background-color: transparent;
+    border: 1px solid #000E40;
+    color: #000E40;
+  }
+
+  &:not(first-child) {
+    margin-left: 16px;
+  }
+}

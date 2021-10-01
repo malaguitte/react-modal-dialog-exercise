@@ -1,0 +1,23 @@
+.input_holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 12px 0;
+}
+
+.input_label {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 8px;
+  color: #000E40;
+}
+
+.input_field {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  font-size: 16px;
+}
