@@ -10,14 +10,19 @@
 
 .layer_content {
     background-color: gray;
-    max-width: 600px;
+    width: 600px;
     height: auto;
     opacity: 0;
     transform: translateY(200px);
-    transition: all 400ms ease-in;
+    transition: all 200ms ease-in;
     &.active {
         opacity: 1;
         transform: translateY(0);
-        transition: all 400ms ease-out;
+        transition: all 200ms ease-out;
     }
+}
+
+.resizable {
+    resize: both;
+    overflow: auto;
 }
