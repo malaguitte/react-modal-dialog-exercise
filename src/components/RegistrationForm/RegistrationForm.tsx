@@ -1,4 +1,4 @@
-import Input from "../input/Input";
+import Input from "../Input/Input";
 import "./RegistrationForm.scss"
 
 function RegistrationForm() {

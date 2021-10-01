@@ -1,8 +1,8 @@
 import "./App.scss";
 import { useState } from "react";
-import RegistrationDialog from "./components/registration-dialog/RegistrationDialog";
+import RegistrationDialog from "./components/RegistrationDialog/RegistrationDialog";
 import { dragElement } from "./utils/Drag";
-import Button from "./components/button/Button";
+import Button from "./components/Button/Button";
 
 const SHOW_DIALOG_BUTTON_LABEL = "Show Dialog";
 const onCancelClick = () => console.log("Clicked Cancel");
@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <div className="show_dialog_button">
-        <Button theme="primary" onClickHandler={() => setActive(true)}>{SHOW_DIALOG_BUTTON_LABEL}</Button>
+        <Button theme="secondary" onClickHandler={() => setActive(true)}>{SHOW_DIALOG_BUTTON_LABEL}</Button>
       </div>
       <RegistrationDialog
         isActive={isActive}

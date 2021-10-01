@@ -1,5 +1,5 @@
-import Dialog from "../dialog/Dialog"
-import RegistrationForm from "./RegistrationForm";
+import Dialog from "../Dialog/Dialog"
+import RegistrationForm from "../RegistrationForm/RegistrationForm";
 
 interface RegistrationDialogProps {
   isActive: boolean,
