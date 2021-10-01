@@ -1,10 +1,13 @@
+@use "../../utils/Colors.scss" as colors;
+$button_font_color: #fff;
+
 .button {
   padding: 16px;
   border-radius: 8px;
-  background-color: #000E40;
+  background-color: colors.$dark_blue_color;
   font-size: 16px;
   border: none;
-  color: #fff;
+  color: $button_font_color;
   font-weight: bold;
   min-width: 120px;
   transition: filter 200ms ease-out;
@@ -17,8 +20,8 @@
 
   &.secondary {
     background-color: transparent;
-    border: 1px solid #000E40;
-    color: #000E40;
+    border: 1px solid colors.$dark_blue_color;
+    color: colors.$dark_blue_color;
   }
 
   &:not(first-child) {

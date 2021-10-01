@@ -2,10 +2,10 @@ export function makeDraggable(element: HTMLElement) {
   let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   const headerElement = document.getElementById(`${element.id}_header`);
   if (headerElement) {
-    // if present, the header is where you move the DIV from:
+    // if present, the header is where you move the DIV from
     headerElement.onmousedown = dragMouseDown;
   } else {
-    // otherwise, move the DIV from anywhere inside the DIV:
+    // otherwise, move the DIV from anywhere inside the DIV
     element.onmousedown = dragMouseDown;
   }
   

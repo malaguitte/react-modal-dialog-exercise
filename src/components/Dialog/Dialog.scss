@@ -1,3 +1,5 @@
+@use "../../utils/Colors" as colors;
+
 h2 {
   margin: 0;
 }
@@ -6,7 +8,7 @@ h2 {
   position: absolute;
   top: 24px;
   left: 24px;
-  color: #000E40;
+  color: colors.$dark_blue_color;
 }
 
 .dialog_actions_holder {
@@ -43,7 +45,7 @@ h2 {
     position: absolute;
     width: 2px;
     height: 24px;
-    background-color: #000E40;
+    background-color: colors.$dark_blue_color;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
@@ -54,7 +56,7 @@ h2 {
     position: absolute;
     width: 2px;
     height: 24px;
-    background-color: #000E40;
+    background-color: colors.$dark_blue_color;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);

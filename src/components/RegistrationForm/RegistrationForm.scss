@@ -1,7 +1,9 @@
+@use "../../utils/Colors.scss" as colors;
+
 .registration_form_title {
   margin: 16px 0;
   text-align: left;
-  color: #000E40;
+  color: colors.$dark_blue_color;
 }
 
 .registration_form {
